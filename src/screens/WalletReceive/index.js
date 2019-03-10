@@ -75,7 +75,7 @@ class WalletReceive extends Component {
               onPress={() => {
                 Share.share({
                   message: this.props.walletAddress,
-                  title: 'My Eltwallet address',
+                  title: 'My KingWallet address',
                 });
               }}
               text="Share"
