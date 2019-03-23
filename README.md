@@ -12,7 +12,7 @@
 </div>
 
 # Features
-This code is only tested on iOS
+This code is tested on Mac and Windows
 
 and
 
