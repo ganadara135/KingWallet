@@ -19,7 +19,7 @@ and
 use Yarn package manager tool
 
 
-# Install process
+# Install process  On iOS
 
 ## Install dependencies
 $ yarn install
@@ -30,6 +30,24 @@ $ react-native link
 ## launch iOS simulator
 $ react-native run-ios
 
+
+# Install process  On Windows
+
+## downgrade 'base-x@3.0.4'     3.0.5 has trouble on Android?
+modify yarn.lock on base-x module as 3.0.4
+
+## Install dependencies
+$ yarn install
+
+## run native function linking
+$ react-native link
+
+## run rn-nodeify manually
+$ ./node_modules/.bin/rn-nodeify --hack --install "assert, crypto, stream, events, vm"
+
+
+## launch Android simulator
+$ react-native run-android
 
 # Demo
 

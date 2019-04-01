@@ -11,8 +11,8 @@ if (typeof process === 'undefined') {
       process[p] = bProcess[p];
     }
   }
-  process.version = 'v8.9.4';
-  //process.version = 'v10.15.0';
+  //process.version = 'v8.9.4';
+  process.version = 'v10.15.0';
 }
 
 process.browser = false;

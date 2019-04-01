@@ -37,9 +37,9 @@ const appReducer = (state = defaultState, action) => {
           Object.assign(
             action.token,
             { id: uuid.v4() },
-            action.token.name === 'ELTCOIN'
+            action.token.name === 'KINGCOIN'
               ? {
-                  symbol: 'ELT',
+                  symbol: 'KING',
                 }
               : {},
           ),
