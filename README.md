@@ -40,14 +40,14 @@ modify yarn.lock on base-x module as 3.0.4 <br/>
 $ yarn list | cat > file_name <br/>
 after this, check where to use base-x@3.0.5 <br/>
 ex) bs58@^4.0.0  like bottom <br/>
-{
-  bs58@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/bs58/-/bs58-4.0.1.tgz#be161e76c354f6f788ae4071f63f34e8c4f0a42a"
-  integrity sha1-vhYedsNU9veIrkBx9j806MTwpCo=
-  dependencies:
-    base-x "^3.0.2"   ==>  "3.0.2"
-
+{ <br/>
+  bs58@^4.0.0:   <br/>
+  version "4.0.1"  <br/>
+  resolved "https://registry.yarnpkg.com/bs58/-/ <br/> bs58-4.0.1.tgz#be161e76c354f6f788ae4071f63f34e8c4f0a42a"  <br/>
+  integrity sha1-vhYedsNU9veIrkBx9j806MTwpCo=    <br/>
+  dependencies:    <br/>
+    base-x "^3.0.2"  
+  ##  ==>  "3.0.2"   <br/>
 }
 
 ## Install dependencies
