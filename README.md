@@ -36,10 +36,10 @@ $ react-native run-ios
 
 
 ## downgrade 'base-x@3.0.4'     3.0.5 has trouble on Android
-modify yarn.lock on base-x module as 3.0.4
-$ yarn list | cat > file_name
-after this, check where to use base-x@3.0.5
-ex) bs58@^4.0.0  like bottom
+modify yarn.lock on base-x module as 3.0.4 <br/>
+$ yarn list | cat > file_name <br/>
+after this, check where to use base-x@3.0.5 <br/>
+ex) bs58@^4.0.0  like bottom <br/>
 {
   bs58@^4.0.0:
   version "4.0.1"
@@ -47,6 +47,7 @@ ex) bs58@^4.0.0  like bottom
   integrity sha1-vhYedsNU9veIrkBx9j806MTwpCo=
   dependencies:
     base-x "^3.0.2"   ==>  "3.0.2"
+
 }
 
 ## Install dependencies
