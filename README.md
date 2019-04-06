@@ -46,8 +46,7 @@ ex) bs58@^4.0.0  like bottom <br/>
   resolved "https://registry.yarnpkg.com/bs58/-/ <br/> bs58-4.0.1.tgz#be161e76c354f6f788ae4071f63f34e8c4f0a42a"  <br/>
   integrity sha1-vhYedsNU9veIrkBx9j806MTwpCo=    <br/>
   dependencies:    <br/>
-    base-x "^3.0.2"  
-  ##  ==>  "3.0.2"   <br/>
+    base-x "^3.0.2"  ## ==>  "3.0.2"   <br/>
 }
 
 ## Install dependencies
