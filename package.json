@@ -2,7 +2,7 @@
   "name": "kingwallet",
   "version": "0.1.1",
   "private": true,
-  "scripts": {
+  "scripts_android": {
     "lint": "eslint .",
     "precommit": "lint-staged",
     "postinstall": "./scripts/postinstall.sh",
@@ -10,10 +10,12 @@
     "postversion": "react-native-version",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "caClean": "yarn cache clean"
+    "caClean": "yarn cache clean",
+    "cleanByPackage": "react-native-clean-project"
+
   },
-  "scripts_tmp": {
-    "clean_mac": "rimraf '{build,.jest,ios/build,android/build}'",
+  "scripts": {
+    "clean": "rimraf '{build,.jest,ios/build,android/build}'",
     "clean:all": "yarn clean && rimraf {node_modules,./gems,ios/Pods,android/.gradle}",
     "fastlane": "export LC_CTYPE=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 && bundle exec fastlane",
     "nodeify": "rn-nodeify --install net,process,util,stream --hack",
@@ -23,7 +25,8 @@
     "prepare:ios": "yarn fastlane ios prepare",
     "prepare:android": "yarn fastlane android prepare",
     "purge": "yarn clean:all && yarn && yarn prepare:all",
-    "cleanByPackage": "react-native-clean-project"
+    "cleanByPackage": "react-native-clean-project",
+    "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
     "@tradle/react-native-http": "^2.0.1",

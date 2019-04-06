@@ -52,4 +52,4 @@ const App = () => (
   </Provider>
 );
 
-AppRegistry.registerComponent('KingWallet', () => App);
+AppRegistry.registerComponent('kingwallet', () => App);

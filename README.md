@@ -12,7 +12,7 @@
 </div>
 
 # Features
-This code is only tested on iOS
+This code is tested on iOS and Android with Mac and Windows
 
 and
 
@@ -31,10 +31,23 @@ $ react-native link
 $ react-native run-ios
 
 
-# Install process  On Windows
 
-## downgrade 'base-x@3.0.4'     3.0.5 has trouble on Android?
+# Install process  On Windows and MacOS  with  Android
+
+
+## downgrade 'base-x@3.0.4'     3.0.5 has trouble on Android
 modify yarn.lock on base-x module as 3.0.4
+$ yarn list | cat > file_name
+after this, check where to use base-x@3.0.5
+ex) bs58@^4.0.0  like bottom
+{
+  bs58@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/bs58/-/bs58-4.0.1.tgz#be161e76c354f6f788ae4071f63f34e8c4f0a42a"
+  integrity sha1-vhYedsNU9veIrkBx9j806MTwpCo=
+  dependencies:
+    base-x "^3.0.2"   ==>  "3.0.2"
+}
 
 ## Install dependencies
 $ yarn install
